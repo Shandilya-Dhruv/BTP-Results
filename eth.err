@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "compare.py", line 10, in <module>
+    summary(net, input_size = (2, 3, 256, 256), batch_size = -1)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torchsummary/torchsummary.py", line 72, in summary
+    model(*x)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/LESPS-XiXinYing/net.py", line 31, in forward
+    pred = self.model(img)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1212, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/LESPS-XiXinYing/model/DNANet/model_DNANet.py", line 148, in forward
+    x0_0 = self.conv0_0(input)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1212, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/LESPS-XiXinYing/model/DNANet/model_DNANet.py", line 79, in forward
+    residual = self.shortcut(x)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1212, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/dhruv_s.iitr/Venv-Btp/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 460, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Expected 3D (unbatched) or 4D (batched) input to conv2d, but got input of size: [2, 2, 3, 256, 256]

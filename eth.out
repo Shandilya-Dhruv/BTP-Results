@@ -1,0 +1,20 @@
+==========================================
+SLURM_CLUSTER_NAME = paramganga
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = iitr
+SLURM_JOB_ID = 166904
+SLURM_JOB_NAME = run_compare.sh
+SLURM_JOB_NODELIST = gpu007
+SLURM_JOB_USER = nobody
+SLURM_JOB_UID = 38550
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 18599
+SLURM_SUBMIT_DIR = /home/dhruv_s.iitr/LESPS-XiXinYing
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 18599
+==========================================
